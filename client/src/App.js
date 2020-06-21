@@ -1,13 +1,17 @@
 import React, {Fragment} from 'react';
 import {BrowserRouter as Router , Route, Switch} from 'react-router-dom';
+import AuthState from './context/auth/AuthState';
+
 import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import ContactState from './context/contact/ContactState';
+
 import './App.css';
 
 const App = () => {
   return (
+    <AuthState>
     <ContactState>
     <Router>
       <Fragment >
@@ -22,6 +26,7 @@ const App = () => {
     </Fragment>
     </Router>
     </ContactState>
+  </AuthState>
   );
 }
 
