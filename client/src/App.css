@@ -19,7 +19,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background: #1E90FF linear-gradient(45deg,#6BCAE2 , #1E90FF,#800080,#FF1493 ) fixed;
+  
+  text-shadow: 0 1px 1px hsl(0 0% 0% / 20%);
+  margin: 3rem;
   color: #333;
 }
 
@@ -289,6 +292,11 @@ img {
   border: #ccc solid 1px;
 }
 
+.btn-delete {
+  background: #cc5500;
+  color: #000000;
+}
+
 .round-img {
   border-radius: 50%;
 }
@@ -361,8 +369,8 @@ table th {
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
-  border-bottom: solid 1px var(--primary-color);
   opacity: 0.9;
+  background-color: #333333;
   margin-bottom: 1rem;
 }
 
