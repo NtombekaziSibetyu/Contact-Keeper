@@ -9,12 +9,12 @@ const ContactFilter = () => {
 
     useEffect(() => {
         if(filtered === null){
-            text.current.value = ' ';
+            text.current.value = '';
         }
          });
 
     const onChange = e => {
-        if(text.current.value !== ' ') {
+        if(text.current.value !== '') {
            filterContacts(e.target.value);
         } else {
            clearFilter();
@@ -25,7 +25,7 @@ const ContactFilter = () => {
             <h3>Search for a contact</h3>
          <input ref={text} type="text" placeholder="Filter Contacts..." onChange={onChange}/>   
         </form>
-    )
-}
+    );
+};
 
 export default ContactFilter;
